@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savov & Sons LTD.</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Apply the Inter font to the entire body */
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Main container with a little padding -->
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+
+        <!-- Header Section -->
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-2">Savov & Sons LTD.</h1>
+            <p class="text-lg md:text-xl text-gray-600">Building with integrity, for generations to come.</p>
+        </header>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">About Us</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Welcome to Savov & Sons LTD.! We specialize in delivering high-quality building and renovation services, from residential remodels to large-scale commercial projects. Our commitment to craftsmanship and client satisfaction is at the heart of everything we do.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">Our Recent Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-md">
+                    <img src="https://placehold.co/400x250/E9E9E9/808080?text=Residential+Renovation" alt="Residential Renovation" class="rounded-md mb-4 w-full">
+                    <h3 class="font-bold text-lg text-blue-600">Modern Home Renovation</h3>
+                    <p class="text-sm text-gray-500 mt-1">A full-scale renovation to create a modern and open-concept living space.</p>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-md">
+                    <img src="https://placehold.co/400x250/E9E9E9/808080?text=Commercial+Office" alt="Commercial Office" class="rounded-md mb-4 w-full">
+                    <h3 class="font-bold text-lg text-blue-600">Downtown Office Build-out</h3>
+                    <p class="text-sm text-gray-500 mt-1">Completed a state-of-the-art office space with custom features and collaborative zones.</p>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-md">
+                    <img src="https://placehold.co/400x250/E9E9E9/808080?text=Deck+Construction" alt="Deck Construction" class="rounded-md mb-4 w-full">
+                    <h3 class="font-bold text-lg text-blue-600">Outdoor Deck & Patio</h3>
+                    <p class="text-sm text-gray-500 mt-1">Designed and built a beautiful outdoor living area for a family home.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4 text-center">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 shadow-inner">
+                    <p class="text-gray-600 italic">"Savov & Sons LTD. delivered beyond our expectations. The team was professional, efficient, and the final result is stunning. Highly recommend!"</p>
+                    <p class="mt-4 font-bold text-blue-600">- Jane Doe</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 shadow-inner">
+                    <p class="text-gray-600 italic">"The entire process was smooth from start to finish. They were communicative and made sure we were happy every step of the way."</p>
+                    <p class="mt-4 font-bold text-blue-600">- John Smith</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-4 text-center">Get a Free Quote</h2>
+            <form id="contactForm" class="max-w-xl mx-auto space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-gray-500 text-sm mt-8 pb-8">
+        © 2024 Savov & Sons LTD. All Rights Reserved.
+    </footer>
+
+    <!-- The custom message modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-xl text-center">
+            <p class="text-lg font-semibold mb-4" id="modal-text">Thank you for your inquiry!</p>
+            <button id="closeModalBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const modal = document.getElementById('modal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent the form from actually submitting
+            
+            // You can process the form data here (e.g., send to a server)
+            // For now, we'll just show the confirmation message
+            modal.style.display = 'flex';
+
+            // Clear the form fields
+            contactForm.reset();
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Hide the modal if the user clicks outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
